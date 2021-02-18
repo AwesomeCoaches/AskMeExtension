@@ -1,0 +1,31 @@
+{
+  "author": "Christine Chaewon Shin",
+  "manifest_version": 3,
+  "name": "Ask Me Extension",
+  "version": "1.0",
+  "description": "Extension for Ask Me",
+
+  "icons": {
+    "16": "images/favicon-16x16.png",
+    "32": "images/favicon-32x32.png",
+    "48": "images/favicon-32x32.png",
+    "128": "images/favicon-96x96.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ask Me",
+    "default_icon": {
+      "16": "images/favicon-16x16.png",
+      "32": "images/favicon-32x32.png",
+      "48": "images/favicon-32x32.png",
+      "128": "images/favicon-96x96.png"
+    }
+  },
+
+  "permissions": ["activeTab", "declarativeContent", "storage", "clipboardWrite", "clipboardRead", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+
+}

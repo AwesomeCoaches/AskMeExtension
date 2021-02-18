@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="mainTitle" class="main-title">
+        <img src="./images/favicon-96x96.png" alt="Ask Me Icon" class="icon-img">
+        <h2>Ask Me</h2>
+      </div>
+      <div id="mainBody">
+        <!-- 카테고리 -->
+        <div class="category-form" id="categoryForm">
+          <div class="catetory-container main-category-conatainer">
+            <label for="mainCategory" class="category-label">대분류</label>
+            <select name="mainCategory" id="mainCategory">
+              <option value="Frontend">Frontend</option>
+              <option value="Backend">Backend</option>
+              <option value="Database">Database</option>
+              <option value="Server">Server</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+
+          <div class="category-container">
+            <label for="subCategory" class="category-label">소분류</label>
+            <select name="subCategory" id="subCategory">
+              <option value="React">React</option>
+              <option value="Vue.js">Vue.js</option>
+              <option value="HTML & CSS">HTML & CSS</option>
+            </select>
+          </div>
+
+          <div class="category-container">
+            <label for="keyword" class="category-label">키워드</label>
+            <select name="keyword" id="keyword">
+              <option value="인프라">인프라</option>
+              <option value="에러">에러</option>
+              <option value="설계">설계</option>
+              <option value="환경설정">환경설정</option>
+              <option value="배포">배포</option>
+              <option value="교보재">교보재</option>
+              <option value="산출물">산출물</option>
+              <option value="학습">학습</option>
+              <option value="개발">개발</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- 질문 -->
+        <div class="question-form" id="questionForm">
+          <div class="form-container">
+            <label for="title" class="form-label">제목</label>
+            <textarea id="title" name="title" class="question-textarea" cols="50" rows="2"></textarea>
+          </div>
+          
+          <div class="form-container">
+            <label for="content" class="form-label">내용</label>
+            <textarea id="content" name="content" class="question-textarea" cols="50" rows="5"></textarea>
+          </div>
+        </div>
+
+        <!-- 로그인 -->
+        <div class="login-form">
+          <div class="login-container">
+            <label for="name" class="login-label">이름</label>
+            <input type="text" name="name" id="name" class="login-input">
+          </div>
+
+          <div class="login-container">
+            <label for="password" class="login-label">비밀번호</label>
+            <input type="password" name="password" id="password" class="login-input">
+          </div>
+        </div>
+        
+        <!-- 제출 버튼 -->
+        <div class="button-container">
+          <button id="submitButton" class="btn">등록</button>
+          <button id="resetButton" class="btn">초기화</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

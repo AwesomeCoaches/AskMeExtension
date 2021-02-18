@@ -1,0 +1,118 @@
+  @font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    font-family: paybooc-Bold;
+  }
+
+  body {
+    background-color: #faf9f6;
+  }
+
+  .container {
+    margin: 20px 15px;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  .icon-img {
+    max-width: 25px;
+    max-height: 25px;
+    margin: auto 10px auto 0px;
+  }
+
+  .category-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .category-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .main-category-conatainer {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .category-label {
+    margin-bottom: 5px;
+  }
+
+  select {
+    min-width: 100px;
+    padding: 4px 2px;
+    border-radius: 5px;
+  }
+
+  .form-container {
+    margin: 5px 0px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .question-textarea {
+    resize: none;
+    border-radius: 5px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px 10px;
+  }
+
+  .login-label {
+    margin: 0 5px 0 0;
+  }
+
+  .login-input {
+    max-width: 120px;
+    border-radius: 5px;
+  }
+
+  input[type=password] {
+    font-family: Arial, Helvetica, Arial, sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 0;
+  }
+
+  .btn {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  #submitButton {
+    background-color: #67d5b5;
+    margin-right: 10px;
+  }
+
+  #resetButton {
+    background-color: #E4A97A;
+  }
